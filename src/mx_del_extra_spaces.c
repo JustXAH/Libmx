@@ -1,9 +1,8 @@
 #include "libmx.h"
 
 static int size_loop(char *str) {
-    int len = 0;
+    int len = mx_strlen(str);
 
-    len = mx_strlen(str);
     for (int i = 0; str[i] != '\0'; i++)
         if (mx_isspace(str[i]) && mx_isspace(str[i + 1]))
             len--;

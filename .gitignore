@@ -7,4 +7,3 @@ cmake-build-debug
 .idea
 CMakeLists.txt
 agent.h
-.txt

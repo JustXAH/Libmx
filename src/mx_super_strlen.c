@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-int mx_supper_strlen(const char *s) {
+int mx_super_strlen(const char *s) {
     int i = 0;
 
     if (!s)

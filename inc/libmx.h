@@ -1,16 +1,18 @@
 #pragma once
 
+
 #include <stdlib.h>
-#include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
 #include <string.h>
 #include <fcntl.h>
 #include <malloc/malloc.h>
 
+
 #define INT_MIN -2147483648
 #define LONG_MAX 9223372036854775807
 #define LONG_MIN -9223372036854775807
+
 
 typedef struct s_list {
     void *data;
@@ -19,7 +21,7 @@ typedef struct s_list {
 
 
 /*
- * Utils pack - All old functions checked and fixed!!!
+ * Utils pack
  */
 void mx_printchar(char c);
 void mx_print_unicode(wchar_t c);
@@ -38,7 +40,7 @@ int mx_quicksort(char **arr, int left, int right);
 
 
 /*
- * String pack - All old functions checked and fixed!!!
+ * String pack
  */
 int mx_strlen(const char *s);
 void mx_swap_char(char *s1, char *s2);
@@ -62,7 +64,7 @@ char *mx_del_extra_spaces(const char *str);
 char **mx_strsplit(const char *s, char c);
 char *mx_strjoin(const char *s1, const char *s2);
 char *mx_file_to_str(const char *file);
-//int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
+int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
 char *mx_replace_substr(const char *str, const char *sub, const char *replace);
 
 
@@ -83,7 +85,7 @@ void *mx_realloc(void *ptr, size_t size);
 
 
 /*
- * List pack - All old functions checked and fixed!!!
+ * List pack
  */
 t_list *mx_create_node(void *data);
 void mx_push_front(t_list **list, void *data);
@@ -110,4 +112,4 @@ void mx_print_arr_int(const int *arr, int size);
 char *mx_strchr(const char *s, int c);
 int mx_strncmp(const char *s1, const char *s2, int n);
 int mx_atoi(const char *str);
-int mx_supper_strlen(const char *s);
+int mx_super_strlen(const char *s);
